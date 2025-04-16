@@ -3,49 +3,100 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My First Site</title>
+  <title>Article Box City</title>
   <style>
     body {
       font-family: sans-serif;
-      margin: 2rem;
-      background-color: #f0f0f0;
-      color: #333;
+      margin: 0;
+      background-color: #f4f4f4;
     }
     nav {
-      background: #333;
+      background: #222;
+      color: white;
       padding: 1rem;
-      margin-bottom: 2rem;
+      position: sticky;
+      top: 0;
+      z-index: 100;
     }
     nav a {
       color: white;
       margin-right: 1rem;
       text-decoration: none;
     }
-    img {
-      max-width: 300px;
-      border-radius: 8px;
+    .container {
+      padding: 2rem;
+    }
+    .article {
+      background: white;
+      padding: 1rem;
+      margin-bottom: 2rem;
+      border-left: 6px solid #007acc;
+      border-radius: 6px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    .article h2 {
+      margin-top: 0;
     }
   </style>
 </head>
 <body>
   <nav>
-    <a href="#">Home</a>
-    <a href="#">Menu</a>
-    <a href="#">Gallery</a>
-    <a href="#">Contact</a>
+    <strong>Jump to:</strong>
+    <a href="#article1">Article 1</a>
+    <a href="#article2">Article 2</a>
+    <a href="#article3">Article 3</a>
+    <a href="#article4">Article 4</a>
+    <a href="#article5">Article 5</a>
+    <a href="#article6">Article 6</a>
+    <a href="#article7">Article 7</a>
+    <a href="#article8">Article 8</a>
+    <a href="#article9">Article 9</a>
+    <a href="#article10">Article 10</a>
   </nav>
 
-  <h1>Welcome to My Test Site</h1>
-  <p>This is just a basic test. Nothing fancy yet. But hey—it’s live.</p>
-
-  <h2>Menu</h2>
-  <ul>
-    <li>Pizza 🍕</li>
-    <li>Burger 🍔</li>
-    <li>Sushi 🍣</li>
-  </ul>
-
-  <h2>Gallery</h2>
-  <img src="https://via.placeholder.com/300" alt="Sample image" />
+  <div class="container">
+    <!-- Ten article boxes -->
+    <!-- Copy-paste is a dev tradition. Don't fight it. -->
+    <div class="article" id="article1">
+      <h2>Article 1</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+    <div class="article" id="article2">
+      <h2>Article 2</h2>
+      <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+    </div>
+    <div class="article" id="article3">
+      <h2>Article 3</h2>
+      <p>Duis aute irure dolor in reprehenderit in voluptate velit esse.</p>
+    </div>
+    <div class="article" id="article4">
+      <h2>Article 4</h2>
+      <p>Cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat.</p>
+    </div>
+    <div class="article" id="article5">
+      <h2>Article 5</h2>
+      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+    <div class="article" id="article6">
+      <h2>Article 6</h2>
+      <p>Maecenas faucibus mollis interdum. Aenean lacinia bibendum.</p>
+    </div>
+    <div class="article" id="article7">
+      <h2>Article 7</h2>
+      <p>Curabitur blandit tempus porttitor. Sed posuere consectetur est at lobortis.</p>
+    </div>
+    <div class="article" id="article8">
+      <h2>Article 8</h2>
+      <p>Donec id elit non mi porta gravida at eget metus.</p>
+    </div>
+    <div class="article" id="article9">
+      <h2>Article 9</h2>
+      <p>Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+    </div>
+    <div class="article" id="article10">
+      <h2>Article 10</h2>
+      <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+    </div>
+  </div>
 </body>
 </html>
